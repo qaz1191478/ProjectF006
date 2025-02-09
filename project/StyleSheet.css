@@ -1,0 +1,16 @@
+﻿.carousel {
+    margin-top: 20px;
+}
+
+.carousel-inner img {
+    width: 50%;
+    height: 100px; /* กำหนดขนาดภาพของสไลด์ */
+    object-fit: fill; /* ทำให้ภาพอยู่เต็มบล็อค */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* เปลี่ยนสีปุ่มเลื่อนไปซ้าย/ขวา */
+    border-radius: 50%;
+    padding: 10px;
+}

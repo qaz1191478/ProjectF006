@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "บทความที่ " + ViewData["ArticleId"];
+}
+
+<div class="container text-center">
+    <h1 class="mt-4">บทความที่ @ViewData["ArticleId"]</h1>
+
+    <div class="image-container">
+        <img src="@Url.Content($"~/images/IT{ViewData["ArticleId"]}.png")"
+             alt="บทความที่ @ViewData["ArticleId"]" class="article-image">
+    </div>
+
+    <div class="article-content mt-3" style="text-align: left; line-height: 1.6;">
+        <h3>Bangkok EV Expo 2024 ♻️</h3>
+
+        <p>ณ ศูนย์การประชุมแห่งชาติสิริกิติ์ 8-11 กุมภาพันธ์ 2567</p>
+
+        <p>มหกรรมยานยนต์ไฟฟ้า และพลังงานทางเลือกได้ในงาน Bangkok EV Expo ที่อัดแน่นไปด้วยรถยนต์ไฟฟ้าเกือบครบทุกแบรนด์ รวมถึงกลุ่ม Charger, ชุดตกแต่งรถ, แอปพลิเคชั่น และพลังงานทางเลือกอย่าง Solar Cell และ Solar Rooftop บริการออกแบบและติดตั้งสถานีชาร์จรถยนต์ไฟฟ้าแบบครบวงจร</p>
+
+        <!-- ภาพเพิ่มเติม (ใส่ชื่อไฟล์เอง) -->
+        <div class="image-container mt-4">
+            <img src="@Url.Content($"~/images/IT2-1.png")" alt="บทความที่ 2 - Extra" class="article-image">
+        </div>
+
+        <!-- เพิ่มเนื้อหาต่อไปจากรูปภาพ -->
+        <div class="additional-content mt-4">
+            <p>
+                สำหรับปีนี้ บริษัท โกลบอลโทรนิค อินเตอร์เทรด จำกัด ได้มีโอกาสเข้าร่วมจัดแสดงสินค้าในงานนี้ โดยนำทัพสินค้ากลุ่ม Solar Energy Solution และสินค้าด้าน IoT พร้อมด้วยทีมงานผู้เชี่ยวชาญด้านงานไฟฟ้า ให้คำปรึกษา แนะนำสินค้าของสมนาคุณ อาธิเช่น กระเป๋าผ้าลดโลกร้อน พวงกุญแจ ปากกาที่ละลึก เป็นต้น
+            </p>
+            <div class="image-container mt-4">
+                <img src="@Url.Content($"~/images/IT2-2.png")" alt="บทความที่ 2 - Extra" class="article-image">
+            </div>
+            <div class="image-container mt-4">
+                <img src="@Url.Content($"~/images/IT2-3.png")" alt="บทความที่ 2 - Extra" class="article-image">
+            </div>
+        </div>
+    </div>
+</div>
